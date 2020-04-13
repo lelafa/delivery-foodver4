@@ -41,12 +41,32 @@ function countPlus(){
     document.getElementById("counter").innerHTML = countPlusF();
 }
 
-var countPlusM = (function () {
-    return function () {return counter -=1;}
-})();
+var countPlusM = (function () { 
+    if (counter != 0){counter -=1;}
+    return counter;
+});
 
 function countMinus(){
-    
     document.getElementById("counter").innerHTML = countPlusM();
 }
+
 //prices display
+var soumCounter = 0;
+
+var soumPlus = (function () {
+    return function () {return soumCounter +=250;}
+})();
+
+function counterSoumDisplayP() {
+    document.getElementById("counterSoumDisplay").innerHTML = soumPlus() + " ₽";  
+}
+
+var soumMinus = (function () {
+    if(soumCounter != 0){soumCounter -=250;}
+    return soumCounter;
+});
+
+function counterSoumDisplayM() {
+    document.getElementById("counterSoumDisplay").innerHTML = soumMinus() + " ₽";
+}
+
