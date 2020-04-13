@@ -58,7 +58,8 @@ var soumPlus = (function () {
 })();
 
 function counterSoumDisplayP() {
-    document.getElementById("counterSoumDisplay").innerHTML = soumPlus() + " ₽";  
+    document.getElementById("counterSoumDisplay").innerHTML = soumPlus() + " ₽";
+    document.getElementById("counterSoumBottom").innerHTML = soumCounter + " ₽";
 }
 
 var soumMinus = (function () {
@@ -68,5 +69,6 @@ var soumMinus = (function () {
 
 function counterSoumDisplayM() {
     document.getElementById("counterSoumDisplay").innerHTML = soumMinus() + " ₽";
+    document.getElementById("counterSoumBottom").innerHTML = soumCounter + " ₽";
 }
 
