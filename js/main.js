@@ -32,43 +32,57 @@ function toggleModalLogin () {
 }
 
 //quantity changes
-var counter = 0;
-var countPlusF = (function () {
-    return function () {return counter +=1;}
-})();
+counter1 = 0;
 
-function countPlus(){
-    document.getElementById("counter").innerHTML = countPlusF();
+const plusC1 = document.querySelector(".plusC1");
+const minusC1 = document.querySelector(".minusC1");
+
+plusC1.addEventListener('click', plusC1F);
+minusC1.addEventListener("click", minusC1F);
+
+function plusC1F(){
+    document.getElementById("counter").innerHTML = countPlus1();
 }
 
-var countPlusM = (function () { 
-    if (counter > 0){counter -=1;}
-    return counter;
+function minusC1F(){
+    document.getElementById("counter").innerHTML = countMinus1();
+}
+
+var countPlus1 = (function (){
+    return counter1 +=1;
 });
 
-function countMinus(){
-    document.getElementById("counter").innerHTML = countPlusM();
+
+var countMinus1 = (function () { 
+    if (counter1 > 0){counter1 -=1;}
+    return counter1;
+});
+
+counter2 = 0;
+
+const plusC2 = document.querySelector(".plusC2");
+const minusC2 = document.querySelector(".minusC2");
+
+plusC2.addEventListener('click', plusC2F);
+minusC2.addEventListener("click", minusC2F);
+
+function plusC2F(){
+    document.getElementById("counter2").innerHTML = countPlus2();
 }
 
-var counter2 = 0;
-var countPlusF2 = (function () {
-    return function () {return counter2 +=1;}
-})();
-
-function countPlus2(){
-    document.getElementById("counter2").innerHTML = countPlusF2();
+function minusC2F(){
+    document.getElementById("counter2").innerHTML = countMinus2();
 }
 
-var countPlusM2 = (function () { 
+var countPlus2 = (function (){
+    return counter2 +=1;
+});
+
+
+var countMinus2 = (function () { 
     if (counter2 > 0){counter2 -=1;}
     return counter2;
 });
-
-function countMinus2(){
-    document.getElementById("counter2").innerHTML = countPlusM2();
-}
-
-//
 
 counter3 = 0;
 
@@ -96,7 +110,83 @@ var countMinus3 = (function () {
     return counter3;
 });
 
+counter4 = 0;
 
+const plusC4 = document.querySelector(".plusC4");
+const minusC4 = document.querySelector(".minusC4");
+
+plusC4.addEventListener('click', plusC4F);
+minusC4.addEventListener("click", minusC4F);
+
+function plusC4F(){
+    document.getElementById("counter4").innerHTML = countPlus4();
+}
+
+function minusC4F(){
+    document.getElementById("counter4").innerHTML = countMinus4();
+}
+
+var countPlus4 = (function (){
+    return counter4 +=1;
+});
+
+
+var countMinus4 = (function () {    
+    if (counter4 > 0){counter4 -=1;}
+    return counter4;
+});
+
+counter5 = 0;
+
+const plusC5 = document.querySelector(".plusC5");
+const minusC5 = document.querySelector(".minusC5");
+
+plusC5.addEventListener('click', plusC5F);
+minusC5.addEventListener("click", minusC5F);
+
+function plusC5F(){
+    document.getElementById("counter5").innerHTML = countPlus5();
+}
+
+function minusC5F(){
+    document.getElementById("counter5").innerHTML = countMinus5();
+}
+
+var countPlus5 = (function (){
+    return counter5 +=1;
+});
+
+
+var countMinus5 = (function () {    
+    if (counter5 > 0){counter5 -=1;}
+    return counter5;
+});
+
+counter6 = 0;
+
+const plusC6 = document.querySelector(".plusC6");
+const minusC6 = document.querySelector(".minusC6");
+
+plusC6.addEventListener('click', plusC6F);
+minusC6.addEventListener("click", minusC6F);
+
+function plusC6F(){
+    document.getElementById("counter6").innerHTML = countPlus6();
+}
+
+function minusC6F(){
+    document.getElementById("counter6").innerHTML = countMinus6();
+}
+
+var countPlus6 = (function (){
+    return counter6 +=1;
+});
+
+
+var countMinus6 = (function () {    
+    if (counter6 > 0){counter6 -=1;}
+    return counter6;
+});
 
 
 //price display counter 1
