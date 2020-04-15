@@ -273,6 +273,7 @@ margin-right: 21px;
     background:rgba(0, 0, 0, 0.4);
     display: flex;
     display: none;
+    overflow:auto;
 }
 .is-open{
     display:flex;
@@ -547,4 +548,18 @@ margin-top:15px;
     .footer-link:not(:last-child){
         margin-right: 0;
     }
+    .modal-footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap:wrap;
+        
+    }
+    .footer-buttons{
+        display: flex;
+        flex-direction: row;
+    }
+    .button-checkout{
+        margin:10px;
+    }
+   
 }
